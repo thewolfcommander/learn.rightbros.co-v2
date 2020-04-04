@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "site": "rb-learn",
+    "public": "public",
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
