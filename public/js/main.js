@@ -1,4 +1,4 @@
-let submitButton = document.querySelector('button');
+
 
 (function ($) {
     "use strict";
@@ -27,7 +27,9 @@ let submitButton = document.querySelector('button');
 
 
     $('.validate-form').focusout(function(){
+        let submitButton = document.querySelector('button');
         var check = true;
+        submitButton.disabled = true;
 
         if($(name).val().trim() == ''){
             showValidate(name);
@@ -64,7 +66,6 @@ let submitButton = document.querySelector('button');
         var thisAlert = $(input).parent();
 
         $(thisAlert).addClass('alert-validate');
-
     }
 
     function hideValidate(input) {
